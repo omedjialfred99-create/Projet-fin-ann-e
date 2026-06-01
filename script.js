@@ -49,4 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPasswordToggle('.toggle-password', '.password-container input');
     setupPasswordToggle('.toggle-password-login', '.password-container-login input');
 });
-        
+  

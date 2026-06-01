@@ -15,7 +15,7 @@
         </div>
 
         <ul class="nav-items">
-            <li><button class="btn" href="#connection">Se connecter</button></li>
+            <li><button class="btn" type="button" id="connect-btn">Se connecter</button></li>
         </ul>
     </nav>
 
@@ -24,11 +24,30 @@
             <h1>Bienvenue sur ConSchool</h1>
             <p>ConSchool est une plateforme de gestion scolaire conçue pour simplifier les tâches administratives et améliorer l'expérience éducative. Notre solution tout-en-un offre des fonctionnalités avancées pour la gestion des étudiants, des enseignants, des cours et bien plus encore.</p>
             <br>
-            <button class="btn" href="decouvert">Découvrez nos services</button>
+            <button class="btn" type="button" id="discover-btn">Découvrez nos services</button>
             <div class="imag-container">
                  <img src="schoos.jpg" alt="Image de l'école" width="70%" height="400px" style="text-align: center;" >
             </div>
         </section>
     </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const connectBtn = document.getElementById('connect-btn');
+            const discoverBtn = document.getElementById('discover-btn');
+
+            if (connectBtn) {
+                connectBtn.addEventListener('click', () => {
+                    window.location.href = 'Connection.html';
+                });
+            }
+
+            if (discoverBtn) {
+                discoverBtn.addEventListener('click', () => {
+                    window.location.href = 'decouvert.html';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
